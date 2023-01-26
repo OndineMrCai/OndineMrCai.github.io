@@ -6,7 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "netlify": "npm run clean && npm run build"
+    "netlify": "npm run clean && npm run build",
     "server": "hexo server"
   },
   "hexo": {
