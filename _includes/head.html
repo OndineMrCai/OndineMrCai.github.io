@@ -1,5 +1,14 @@
 <meta charset="utf-8">
 
+<script>
+  // Apply dark/light theme before paint to avoid a flash.
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+  })();
+</script>
+
 {% include seo.html %}
 
 <meta name="HandheldFriendly" content="True">
@@ -11,9 +20,8 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
 <head>
-  <base target="_blank">
 </head>

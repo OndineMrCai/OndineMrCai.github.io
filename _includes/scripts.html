@@ -1,4 +1,103 @@
-<script src="assets/js/main.min.js"></script>
+<script src="/assets/js/main.min.js"></script>
+
+<script>
+  // Open external links in a new tab; keep internal links in the same tab.
+  document.addEventListener('DOMContentLoaded', function () {
+    var here = window.location.hostname;
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (!href) return;
+      if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+      try {
+        var u = new URL(href, window.location.href);
+        if (u.hostname && u.hostname !== here) {
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
+        }
+      } catch (e) {}
+    });
+  });
+</script>
+
+<script>
+  // Dark mode toggle: flips data-theme on <html>, persists to localStorage,
+  // and swaps the moon/sun icon.
+  (function () {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    function syncIcon() {
+      var theme = document.documentElement.getAttribute('data-theme');
+      var icon = btn.querySelector('i');
+      if (!icon) return;
+      icon.classList.remove('fa-moon', 'fa-sun');
+      icon.classList.add(theme === 'dark' ? 'fa-sun' : 'fa-moon');
+    }
+    syncIcon();
+    btn.addEventListener('click', function () {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      syncIcon();
+    });
+  })();
+</script>
+
+<script>
+  // News nav highlight. Two paths:
+  //   (a) User navigates from another page to /#news → load event fires,
+  //       we read window.location.hash and flash.
+  //   (b) User is already on the homepage and clicks News → the template's
+  //       main.min.js intercepts the click and smooth-scrolls without
+  //       updating the URL hash, so hashchange/load never fires. We hook
+  //       the click in capture phase, run our own scroll + highlight, and
+  //       push the hash explicitly so the URL bar reflects it.
+  (function () {
+    function findHeading() {
+      var anchor = document.getElementById('news');
+      if (!anchor) return null;
+      var node = anchor;
+      for (var i = 0; i < 30 && node; i++) {
+        var next = node.nextElementSibling
+          || (node.parentNode && node.parentNode.nextElementSibling);
+        if (!next) break;
+        if (next.tagName === 'H1') return next;
+        var inner = next.querySelector && next.querySelector('h1');
+        if (inner) return inner;
+        node = next;
+      }
+      return null;
+    }
+    function flash() {
+      var h = findHeading();
+      if (!h) return;
+      h.classList.remove('flash-highlight');
+      void h.offsetWidth; // force reflow to restart animation
+      h.classList.add('flash-highlight');
+      setTimeout(function () { h.classList.remove('flash-highlight'); }, 1700);
+    }
+    function handleHash() {
+      if (window.location.hash === '#news') flash();
+    }
+    window.addEventListener('hashchange', handleHash);
+    window.addEventListener('load', handleHash);
+
+    // Capture-phase click intercept — runs before main.min.js's handler.
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var href = a.getAttribute('href');
+      if (!href || href.indexOf('#news') === -1) return;
+      var path = window.location.pathname.replace(/\/index\.html$/, '/');
+      if (path !== '/') return; // not on homepage — let browser navigate
+      e.preventDefault();
+      var anchor = document.getElementById('news');
+      if (anchor && anchor.scrollIntoView) {
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      try { history.pushState(null, '', '/#news'); } catch (err) {}
+      flash();
+    }, true);
+  })();
+</script>
 
 {% include analytics.html %}
-{% include fetch_google_scholar_stats.html %}

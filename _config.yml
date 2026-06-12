@@ -7,8 +7,10 @@
 
 # Site Settings
 title                    : "Songcheng Cai"
-description              : "Personal homepage of Songcheng Cai"
+description              : ""
 repository               : "OndineMrCai/OndineMrCai.github.io"
+url                      : "https://OndineMrCai.github.io"
+baseurl                  : ""
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -21,13 +23,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Songcheng Cai"
-  avatar           : "images/profile.webp"
-  bio              : "Senior at Zhejiang University; co-advised by Prof. Hongyuan Mei and Prof. Karen Livescu at TTIC."
-  location         : "Hangzhou, China"
+  avatar           : "images/profile.jpeg"
+  bio              : "Master Student at University of Waterloo."
+  location         : "Waterloo, Canada"
   employer         :
   pubmed           :
-  googlescholar    :
-  email            : "songcheng826@zju.edu.cn"
+  googlescholar    : "https://scholar.google.com/citations?user=1WS_sEwAAAAJ&hl=en"
+  email            : "songcheng.cai@uwaterloo.ca"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -35,14 +37,14 @@ author:
   dribbble         :
   flickr           :
   facebook         :
-  foursquare       :
+  foursquare       : 
   github           : "OndineMrCai"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "songcheng-cai-26140b2b8"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
@@ -50,7 +52,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "SongchengCai11"
   vine             :
   weibo            :
   xing             :

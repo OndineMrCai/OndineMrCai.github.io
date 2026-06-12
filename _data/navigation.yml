@@ -1,6 +1,6 @@
 # main navigation
 main:
-  - title: "Home"
+  - title: "About Me"
     url: "/"
 
   - title: "News"
@@ -9,11 +9,8 @@ main:
   - title: "Publications"
     url: "/publications/"
 
-  - title: "Education"
-    url: "/education/"
-
-  - title: "Teaching"
-    url: "/teaching/"
+  - title: "Teaching and Service"
+    url: "/teaching-and-service/"
 
   - title: "CV"
-    url: "/cv/"
+    url: "/files/Songcheng_Cai_CV.pdf"

@@ -107,3 +107,124 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+/* Inline venue badge — matches the absolutely-positioned .badge above
+   (same blue, font size, weight, padding, sharp corners) but flows with
+   text so it can be used in lists. */
+.venue-badge {
+    display: inline-block;
+    padding: 0 1rem;
+    color: white;
+    background-color: #00369f;
+    font-size: 0.8rem;     /* rem (not em) — pin to html root, unaffected by li's 1.05em */
+    margin-right: 0.35em;
+    vertical-align: 0.1em;
+    line-height: 1.6;
+}
+
+/* Theme toggle button — sits in the masthead, pinned to the right,
+   outside of the greedy-nav so its overflow logic ignores it. */
+.masthead__inner-wrap { position: relative; }
+
+#theme-toggle {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    z-index: 30;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 1.4em;
+    padding: 0.25em 0.5em;
+    line-height: 1;
+
+    &:hover { color: #00369f; }
+}
+html[data-theme="dark"] #theme-toggle { color: #d8d8d8; }
+html[data-theme="dark"] #theme-toggle:hover { color: #9ccfff; }
+
+/* ===== Dark mode ===== */
+/* Triggered by <html data-theme="dark">; preference persisted via localStorage. */
+html[data-theme="dark"] {
+    background-color: #1a1a1a;
+
+    body {
+        background-color: #1a1a1a;
+        color: #d8d8d8;
+    }
+
+    a { color: #6cb6ff; }
+    a:hover, a:focus { color: #9ccfff; }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #f0f0f0;
+    }
+
+    /* Top nav */
+    .masthead {
+        background-color: #1a1a1a;
+        border-bottom: 1px solid #2c2c2c;
+    }
+    .greedy-nav {
+        background-color: transparent;
+        a { color: #e0e0e0; }
+        button { color: #e0e0e0; }
+        .navicon, .navicon:before, .navicon:after { background-color: #e0e0e0; }
+    }
+
+    /* Sidebar profile */
+    .author__name { color: #f0f0f0; }
+    .author__bio  { color: #c0c0c0; }
+    .author__urls li { color: #c0c0c0; }
+    .author__urls li a, .author__urls_sm a { color: #d0d0d0; }
+    .author__urls li a:hover { color: #ffffff; }
+    .author__urls.social-icons i { color: #c0c0c0; }
+
+    /* Page content */
+    .page__title, .page__content { color: #e8e8e8; }
+    .page__content blockquote { border-left-color: #444; color: #b8b8b8; }
+    .page__content code, .page__content pre {
+        background-color: #2a2a2a;
+        color: #e8e8e8;
+    }
+
+    /* Publication cards */
+    .paper-box { border-bottom-color: #2c2c2c; }
+    .paper-box-image img { box-shadow: 3px 3px 6px #000; }
+    .badge,
+    .venue-badge { background-color: #3a6fd1; }
+
+    /* Tables / hr / form fields */
+    hr { border-color: #2c2c2c; }
+    table { color: #d8d8d8; }
+    table th, table td { border-color: #2c2c2c; }
+    table tr:nth-child(even) { background-color: #222; }
+
+    /* Footer */
+    .page__footer { background-color: #141414; color: #a0a0a0; }
+    .page__footer a { color: #9ccfff; }
+}
+
+/* News heading flash — triggered by JS when nav lands on /#news.
+   Gives visual feedback even when the heading is already in view. */
+@keyframes news-flash {
+    0%   { background-color: rgba(0, 54, 159, 0.18); }
+    100% { background-color: transparent; }
+}
+@keyframes news-flash-dark {
+    0%   { background-color: rgba(156, 207, 255, 0.22); }
+    100% { background-color: transparent; }
+}
+.flash-highlight {
+    animation: news-flash 1.6s ease-out;
+    border-radius: 4px;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    margin-left: -0.25em;
+    margin-right: -0.25em;
+}
+html[data-theme="dark"] .flash-highlight {
+    animation: news-flash-dark 1.6s ease-out;
+}
