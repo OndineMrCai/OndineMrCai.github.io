@@ -6,12 +6,25 @@ author_profile: true
 
 # 📝 Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLM 2026</div><img src='/images/rewardharness.jpg' alt="RewardHarness" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[RewardHarness: Self-Evolving Agentic Post-Training](https://arxiv.org/abs/2605.08703)
+
+[**🌐 Project**](https://rewardharness.com/) \| [**💻 Code**](https://github.com/TIGER-AI-Lab/RewardHarness) [![Code Stars](https://badgen.net/github/stars/TIGER-AI-Lab/RewardHarness?icon=github&label=stars)](https://github.com/TIGER-AI-Lab/RewardHarness)
+
+Yuxuan Zhang\*, Penghui Du\*, Bo Li\*, Cong Wei\*, Junwen Miao, Huaisong Zhang, **Songcheng Cai**, Yubo Wang, Dongfu Jiang, Yuyu Zhang, Ping Nie, Wenhu Chen, Changqian Yu, Kelsey R. Allen
+
+- RewardHarness introduces a self-evolving pipeline that turns execution feedback and automatic verifiers into scalable reward signals for agentic post-training, cutting the reliance on expensive human preferences.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026 Findings</div><img src='/images/sweqapro.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SWE-QA-Pro: A Representative Benchmark and Scalable Training Recipe for Repository-Level Code Understanding](https://arxiv.org/abs/2603.16124)
 
-[**🤗 HF Collection**](https://huggingface.co/collections/TIGER-Lab/swe-qa-pro) \| [**💻 Code**](https://github.com/TIGER-AI-Lab/SWE-QA-Pro)
+[**🤗 HF Collection**](https://huggingface.co/collections/TIGER-Lab/swe-qa-pro) \| [**💻 Code**](https://github.com/TIGER-AI-Lab/SWE-QA-Pro) [![Code Stars](https://badgen.net/github/stars/TIGER-AI-Lab/SWE-QA-Pro?icon=github&label=stars)](https://github.com/TIGER-AI-Lab/SWE-QA-Pro)
 
 **Songcheng Cai\***, Zhiheng Lyu\*, Yuansheng Ni, Xiangchao Chen, Baichuan Zhou, Shenzhe Zhu, Yi Lu, Haozhe Wang, Chi Ruan, Benjamin Schneider, Weixu Zhang, Xiang Li, Andy Zheng, Yuyu Zhang, Ping Nie, Wenhu Chen
 
@@ -24,7 +37,7 @@ author_profile: true
 
 [VisCoder2: Building Multi-Language Visualization Coding Agents](https://arxiv.org/abs/2510.23642)
 
-[**🌐 Project**](https://tiger-ai-lab.github.io/VisCoder2/) \| [**🤗 HF Collection**](https://huggingface.co/collections/TIGER-Lab/viscoder2) \| [**💻 Code**](https://github.com/TIGER-AI-Lab/VisCoder2)
+[**🌐 Project**](https://tiger-ai-lab.github.io/VisCoder2/) \| [**🤗 HF Collection**](https://huggingface.co/collections/TIGER-Lab/viscoder2) \| [**💻 Code**](https://github.com/TIGER-AI-Lab/VisCoder2) [![Code Stars](https://badgen.net/github/stars/TIGER-AI-Lab/VisCoder2?icon=github&label=stars)](https://github.com/TIGER-AI-Lab/VisCoder2)
 
 Yuansheng Ni\*, **Songcheng Cai\***, Xiangchao Chen\*, Jiarong Liang, Zhiheng Lyu, Jiaqi Deng, Kai Zou, Ping Nie, Fei Yuan, Xiang Yue, Wenhu Chen
 
@@ -37,7 +50,7 @@ Yuansheng Ni\*, **Songcheng Cai\***, Xiangchao Chen\*, Jiarong Liang, Zhiheng Ly
 
 [Revisiting Automated Evaluation for Long-form Table Question Answering](https://aclanthology.org/2024.emnlp-main.815/)
 
-[**💻 Code**](https://github.com/YukiiWWW/LFTQA-Eval)
+[**💻 Code**](https://github.com/YukiiWWW/LFTQA-Eval) [![Code Stars](https://badgen.net/github/stars/YukiiWWW/LFTQA-Eval?icon=github&label=stars)](https://github.com/YukiiWWW/LFTQA-Eval)
 
 Yuqi Wang, Lyuhao Chen, **Songcheng Cai**, Zhijian Xu, Yilun Zhao
 
@@ -48,6 +61,4 @@ Yuqi Wang, Lyuhao Chen, **Songcheng Cai**, Zhijian Xu, Yilun Zhao
 
 # 📄 Preprints
 
-- <span class="venue-badge">arXiv 2026</span> [**ClawBench: Can AI Agents Complete Everyday Online Tasks?**](https://arxiv.org/abs/2604.08523)<br>Yuxuan Zhang, Yubo Wang, Yipeng Zhu, Penghui Du, Junwen Miao, Xuan Lu, Wendong Xu, Yunzhuo Hao, **Songcheng Cai**, Xiaochen Wang, Huaisong Zhang, Xian Wu, Yi Lu, Minyi Lei, Kai Zou, Huifeng Yin, Ping Nie, Liang Chen, Dongfu Jiang, Wenhu Chen, Kelsey R. Allen. [![Code Stars](https://badgen.net/github/stars/TIGER-AI-Lab/ClawBench?icon=github&label=Code%20Stars)](https://github.com/TIGER-AI-Lab/ClawBench)
-
-- <span class="venue-badge">arXiv 2026</span> [**RewardHarness: Self-Evolving Agentic Post-Training**](https://arxiv.org/abs/2605.08703)<br>Yuxuan Zhang, Penghui Du, Bo Li, Cong Wei, Junwen Miao, Huaisong Zhang, **Songcheng Cai**, Yubo Wang, Dongfu Jiang, Yuyu Zhang, Ping Nie, Wenhu Chen, Changqian Yu, Kelsey R. Allen. [![Code Stars](https://badgen.net/github/stars/TIGER-AI-Lab/RewardHarness?icon=github&label=Code%20Stars)](https://github.com/TIGER-AI-Lab/RewardHarness)
+- <span class="venue-badge">arXiv 2026</span> [**ClawBench: Can AI Agents Complete Everyday Online Tasks?**](https://arxiv.org/abs/2604.08523)<br>Yuxuan Zhang, Yubo Wang, Yipeng Zhu, Penghui Du, Junwen Miao, Xuan Lu, Wendong Xu, Yunzhuo Hao, **Songcheng Cai**, Xiaochen Wang, Huaisong Zhang, Xian Wu, Yi Lu, Minyi Lei, Kai Zou, Huifeng Yin, Ping Nie, Liang Chen, Dongfu Jiang, Wenhu Chen, Kelsey R. Allen. [![Code Stars](https://badgen.net/github/stars/TIGER-AI-Lab/ClawBench?icon=github&label=stars)](https://github.com/TIGER-AI-Lab/ClawBench)

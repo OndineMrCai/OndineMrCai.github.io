@@ -19,6 +19,7 @@ My research focus is on building reliable language and multimodal foundation mod
 <span class='anchor' id='news'></span>
 
 # 🔥 News
+- *2026.07*: RewardHarness is accepted by COLM 2026.
 - *2026.05*: [Rewardharness](https://rewardharness.com/) is released. Check out our [paper](https://arxiv.org/abs/2605.08703) and [code](https://github.com/TIGER-AI-Lab/RewardHarness)!
 - *2026.04*: [ClawBench](https://claw-bench.com/) is released. We find frontier LLM agents still struggle with everyday tasks on real websites (Claude Sonnet 4.6: 33.3%). Check out our [paper](https://arxiv.org/abs/2604.08523) and [code](https://github.com/TIGER-AI-Lab/ClawBench)!
 - *2026.04*: SWE-QA-Pro is accepted by Findings of ACL 2026. Check out our [paper](https://arxiv.org/abs/2603.16124) and [huggingface collections](https://huggingface.co/collections/TIGER-Lab/swe-qa-pro).
