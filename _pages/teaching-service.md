@@ -18,7 +18,7 @@ Designed and graded midterm exam questions; answered student questions on Piazza
 
 # Academic Service
 
-I have served as a reviewer for the following venues:
+I have served in the following academic service roles:
 
-- **ICLR** (2026)
-- **AISTATS** (2025, [**Best Reviewer**](https://aistats.org/aistats2025//awards.html); 2026)
+- Area Chair: [**NeurIPS 2026 Workshop on VLM4RWD**](https://vlm4rwd.github.io/)
+- Reviewer: **ICLR** (2026, 2027); **AISTATS** (2025, [**Best Reviewer**](https://aistats.org/aistats2025//awards.html); 2026)
