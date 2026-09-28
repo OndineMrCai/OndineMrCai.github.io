@@ -90,3 +90,4 @@ Yuxuan Zhang, Yubo Wang, Yipeng Zhu, Penghui Du, Junwen Miao, Xuan Lu, Zhuofeng 
 # 📄 Preprints
 
 - <span class="venue-badge">arXiv 2026</span> [**LitTraceQA: A Benchmark for Multi-Stage Grounding and Verification in Scientific Question Answering**](https://arxiv.org/abs/2608.07370)<br>Xuye Liu, Yimu Wang, Peng Shi, Bo Xue, Xiangrui Ke, **Songcheng Cai**, Kath Choi, Di Wu, Freda Shi, Krzysztof Czarnecki
+- <span class="venue-badge">arXiv 2026</span> [**ATTRICITE: Training an Open 4B Model for Citation Recovery toward Faithful Attribution**](https://arxiv.org/abs/2609.14248)<br>Yee Man Choi, Xuehang Guo, **Songcheng Cai**, Yimu Wang, Yi R. Fung, Qingyun Wang
